@@ -1,0 +1,27 @@
+# Secrets — NEVER commit these
+.env
+.streamlit/secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Logs
+logs/*.log
+
+# Artifacts (large binary files — store in Git LFS or cloud storage)
+artifacts/dl_model.pt
+artifacts/spark_checkpt/
+
+# Keep model.pkl (needed for inference)
+!artifacts/model.pkl
+
+# OS
+.DS_Store
+Thumbs.db
